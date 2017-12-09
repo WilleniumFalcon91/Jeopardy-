@@ -16,3 +16,19 @@ body {
     padding: 10px;
     cursor: pointer;
 }
+
+.text-hidden {
+    visibility: hidden;
+
+}
+
+.text-revealed {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    visibility: visible
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+    to { opacity: 100 }
+}
