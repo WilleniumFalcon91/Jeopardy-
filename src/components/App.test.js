@@ -10,5 +10,9 @@ describe('App', () => {
 
     it('renders the title', () => {
         expect(app.find('h2').text()).toEqual('Jeopardy!');
+    });
+
+    it('creates the correct number of links', () => {
+        expect(app.find('Link').length).toEqual(categories.length);
     })
 });
